@@ -52,6 +52,11 @@ header p{
 }
 /* header end */
 
+#qr-code-div *{
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* flex-container start */
 .flex-container{
     width: 100%;
@@ -143,10 +148,15 @@ label{
 @media (max-width: 768px){
     .flex-container{
         flex-direction: column-reverse;
+        margin: auto;
     }
 
     .form-container{
         justify-content: center;
         align-items: center;
+    }
+
+    img{
+        width: 20%;
     }
 }

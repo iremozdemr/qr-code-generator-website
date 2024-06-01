@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <title>qr code generator</title>
 </head>
 <body>
@@ -35,20 +43,17 @@
                         <option>700x700</option>
                     </select>
                     <br>
-                    <button id="button-generate">Generate QR Code</button>
                 </form>
+
+                <button id="button-generate">Generate QR Code</button>
             </div>
 
             <img src="img/qr-code.svg" alt="qr-code-image">
         </div>
+
+        <div id="qr-code-div"></div>
     </main>
-    
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
-      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+
     <script src="js/script.js"></script>
 </body>
 </html>
