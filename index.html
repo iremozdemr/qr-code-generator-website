@@ -3,8 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>qr code generator</title>
 </head>
 <body>
+    <header>
+        <p>QR Code Generator</p>
+    </header>
+
+    <main>
+        <div class="flex-container">
+            <div class="form-container">
+                <h1>QR Code Generator</h1>
+                <p>QR Codes allow smartphone users to access your website simply and quickly.</p>
+                <p>Enter your URL below to generate a QR code and download the images.</p>
+
+                <form>
+                    <label id="label-url">URL:</label>
+                    <br>
+                    <input id="input-url" type="url">
+                    <br>
+                    <label id="label-size">Size:</label>
+                    <br>
+                    <select id="select-size">
+                        <option>100x100</option>
+                        <option>200x200</option>
+                        <option selected>300x300</option>
+                        <option>400x400</option>
+                        <option>500x500</option>
+                        <option>600x600</option>
+                        <option>700x700</option>
+                    </select>
+                    <br>
+                    <button id="button-generate">Generate QR Code</button>
+                </form>
+            </div>
+
+            <img src="img/qr-code.svg" alt="qr-code-image">
+        </div>
+    </main>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

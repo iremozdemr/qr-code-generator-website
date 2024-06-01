@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input, select, button{
+    all: unset;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+form,label,select,option{
+    font: inherit;
+}
+
+header{
+    color: white;
+    background-color: #f04444;
+    padding: 10px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.flex-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    margin: auto;
+}
+
+img{
+    width: 40%;
+    margin: 10px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.form-container *{
+    display: inline-block;
+}
+
+.form-container h1{
+    color: black;
+    margin-bottom: 15px;
+}
+
+.form-container p{
+    color: rgb(66, 63, 63);
+    margin-bottom: 10px;
+}
+
+#label-url{
+    margin-bottom: 5px;
+}
+
+#input-url{
+    margin-bottom: 10px;
+    width: 300px;
+    height: 25px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+
+#label-size{
+    margin-bottom: 5px;
+}
+
+#select-size{
+    margin-bottom: 10px;
+    width: 300px;
+    height: 25px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+
+#button-generate{
+    margin-top: 10px;
+    width: 300px;
+    height: 25px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
