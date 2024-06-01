@@ -64,6 +64,7 @@ header p{
 #qr-code-div *{
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 50px;
 }
 
 /* flex-container start */
@@ -149,6 +150,7 @@ label{
     background-color: #5b5e70;
     color: white;
     padding: 5px;
+    margin-bottom: 25px;
     
     text-align: center;
 
