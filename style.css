@@ -61,16 +61,15 @@ header p{
 }
 /* header end */
 
-main{
-    display: flex;
-    flex-direction: column;
+#qr-code-div *{
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    /* margin-bottom: 50px;  */
 }
 
-#qr-code-div *{
-    display: inline-block;
+#qr-code-div{
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 50px; 
 }
 
 /* flex-container start */
