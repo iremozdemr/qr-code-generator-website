@@ -103,7 +103,7 @@ label{
     margin-bottom: 10px;
 }
 
-#label-size{
+#label-color{
     margin-bottom: 10px;
 }
 
@@ -117,7 +117,7 @@ label{
     margin-bottom: 15px;
 }
 
-#select-size{
+#select-color{
     width: 300px;
     height: 25px;
 
@@ -154,9 +154,5 @@ label{
     .form-container{
         justify-content: center;
         align-items: center;
-    }
-
-    img{
-        width: 20%;
     }
 }
