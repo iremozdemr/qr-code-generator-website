@@ -61,12 +61,16 @@ header p{
 }
 /* header end */
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
 #qr-code-div *{
+    display: inline-block;
     margin-right: auto;
     margin-left: auto;
-    align-items: center;
-    align-self: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px; 
 }
 
 /* flex-container start */
@@ -165,7 +169,7 @@ label{
 }
 /* generate qr code button end */
 
-@media (max-width: 1000px){
+@media (max-width: 768px){
     .flex-container{
         flex-direction: column-reverse;
         margin: auto;
