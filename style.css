@@ -61,15 +61,11 @@ header p{
 }
 /* header end */
 
-#qr-code-div *{
-    /* margin-right: auto; */
-    /* margin-left: auto; */
-    /* margin-bottom: 50px;  */
-}
-
 #qr-code-div{
     margin-right: auto;
     margin-left: auto;
+    display: flex;
+    justify-content: center;
 }
 
 /* flex-container start */
