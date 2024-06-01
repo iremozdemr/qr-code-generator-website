@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* css reset start */
 *{
     font-family: "Poppins", sans-serif;
-    font-weight: 900;
+    font-weight: 400;
     font-style: normal;
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
 }
 
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 input, select, button{
@@ -22,10 +29,16 @@ select::-ms-expand {
     display: none;
 }
 
-form,label,select,option{
+form,label,select,option,button{
     font: inherit;
 }
 
+.form-container *{
+    display: inline-block;
+}
+/* css reset start */
+
+/* header start */
 header{
     color: white;
     background-color: #f04444;
@@ -34,6 +47,12 @@ header{
     margin-bottom: 30px;
 }
 
+header p{
+    font-weight: 900;
+}
+/* header end */
+
+/* flex-container start */
 .flex-container{
     width: 100%;
     display: flex;
@@ -41,61 +60,93 @@ header{
     justify-content: center;
     align-items: center; 
     margin: auto;
+
+    margin-top: 100px;
 }
 
 img{
     width: 40%;
     margin: 10px;
 }
+/* flex-container start */
 
 .form-container{
     display: flex;
     flex-direction: column;
-    margin: 20px;
-}
 
-.form-container *{
-    display: inline-block;
+    margin: 20px;
 }
 
 .form-container h1{
     color: black;
+    font-weight: 900;
+
     margin-bottom: 15px;
 }
 
 .form-container p{
     color: rgb(66, 63, 63);
+
     margin-bottom: 10px;
+}
+
+label{
+    font-weight: 600;
 }
 
 #label-url{
-    margin-bottom: 5px;
-}
-
-#input-url{
     margin-bottom: 10px;
-    width: 300px;
-    height: 25px;
-    border: 1px solid darkgray;
-    border-radius: 5px;
 }
 
 #label-size{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#input-url{
+    width: 300px;
+    height: 25px;
+
+    border: 1px solid darkgray;
+    border-radius: 5px;
+
+    margin-bottom: 15px;
 }
 
 #select-size{
-    margin-bottom: 10px;
     width: 300px;
     height: 25px;
+
     border: 1px solid darkgray;
     border-radius: 5px;
+
+    margin-bottom: 25px;
+
+    text-align-last: center;
 }
 
+/* generate qr code button start */
 #button-generate{
-    margin-top: 10px;
-    width: 300px;
+    width: 295px;
     height: 25px;
+
     border: 1px solid darkgray;
     border-radius: 5px;
+
+    background-color: #5b5e70;
+    color: white;
+    padding: 5px;
+    
+    text-align: center;
+}
+/* generate qr code button end */
+
+@media (max-width: 768px){
+    .flex-container{
+        flex-direction: column-reverse;
+    }
+
+    .form-container{
+        justify-content: center;
+        align-items: center;
+    }
 }
